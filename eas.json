@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 10.2.1"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "preview2": {
+      "android": {
+        "gradleCommand": ":app:assembleRelease"
+      }
+    },
+    "preview3": {
+      "developmentClient": true
+    },
+    "preview4": {
+      "distribution": "internal"
+    },
+    "production": {
+      "env": {
+        "EXPO_PUBLIC_FB_X_RAPIDAPI_KEY": "ef3423631emshacc6bfa826c0e40p10e57ejsn60d45b141cef",
+        "EXPO_PUBLIC_INSTA_X_RAPIDAPI_KEY": "ef3423631emshacc6bfa826c0e40p10e57ejsn60d45b141cef"
+      }
+    },
+    "test": {
+      "env": {
+        "EXPO_PUBLIC_FB_X_RAPIDAPI_KEY": "ef3423631emshacc6bfa826c0e40p10e57ejsn60d45b141cef",
+        "EXPO_PUBLIC_INSTA_X_RAPIDAPI_KEY": "ef3423631emshacc6bfa826c0e40p10e57ejsn60d45b141cef"
+      }
+    }
+  },
+  "submit": {
+    "production": {}
+  }
+}
